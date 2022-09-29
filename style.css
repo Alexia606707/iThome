@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+@media screen and (max-width: 700px) {  
+    header nav ul {
+      flex-direction: column;
+    }
+    header nav ul li {
+      padding: 0.5rem;
+      border-bottom: 2px solid gray;
+    }
+}
+
+.active {
+    color: blueviolet;
+  }
+
+header nav ul {
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+
+
+main section.form form {
+    padding-left: 1rem;
+}
+
+main section.form form div label {
+    font-size: 1.5rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+main section.form form button {
+    background-color: violet;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    padding: 0.5em 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+main section.table {
+    padding-left: 1rem;
+}
+
+main section.table table {
+    border-collapse: collapse;
+}
+
+main section.table table tr {
+    border-top: 1px solid blueviolet;
+    border-bottom: 1px solid blueviolet;
+    transition: all 0.4s ease;
+}
+
+main section.table table tr td {
+    padding: 1rem;
+}
+
+main section.table table tr:hover {
+    background-color: pink;
+}
+
+
+
+main {
+    display: flex;
+    padding: 1rem;
+}
+
+main section.left h1 {
+    font-size: 4rem;
+    color: mediumorchid;
+    padding-left: 4rem;
+}
+
+main section.left p {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+main section.right {
+    flex: 1 1;
+    position: relative;
+}
+
+main section.right img {
+    border-radius: 50%;
+    width: 31vw;
+    height: 31vw;
+    position: absolute;
+    top: 35vh;
+    right: 5vw;
+    transform: translateY(-50%);
+}
+
+footer {
+    padding-left: 2rem;
+}
+
+footer a {
+    padding: 0.5rem;
+}
